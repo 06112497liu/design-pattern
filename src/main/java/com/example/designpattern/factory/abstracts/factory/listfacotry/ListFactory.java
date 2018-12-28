@@ -1,8 +1,6 @@
 package com.example.designpattern.factory.abstracts.factory.listfacotry;
 
 import com.example.designpattern.factory.abstracts.factory.factory.*;
-import com.example.designpattern.factory.abstracts.factory.listfacotry.ListLink;
-import com.example.designpattern.factory.abstracts.factory.listfacotry.ListTray;
 
 /**
  * @author liuweibo

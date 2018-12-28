@@ -1,4 +1,7 @@
-package com.example.designpattern.factory.abstracts.factory.factory;
+package com.example.designpattern.factory.abstracts.factory.listfacotry;
+
+import com.example.designpattern.factory.abstracts.factory.factory.Item;
+import com.example.designpattern.factory.abstracts.factory.factory.Page;
 
 import java.util.Iterator;
 
