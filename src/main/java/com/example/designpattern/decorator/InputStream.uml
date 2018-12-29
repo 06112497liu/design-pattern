@@ -3,55 +3,135 @@
   <ID>JAVA</ID>
   <OriginalElement>java.io.InputStream</OriginalElement>
   <nodes>
-    <node x="191.0" y="162.0">java.io.DataInputStream</node>
-    <node x="100.75" y="81.0">java.io.FilterInputStream</node>
-    <node x="0.0" y="162.0">java.io.BufferedInputStream</node>
-    <node x="269.75" y="81.0">java.io.ByteArrayInputStream</node>
-    <node x="466.75" y="81.0">java.io.PipedInputStream</node>
-    <node x="640.75" y="81.0">java.io.FileInputStream</node>
-    <node x="390.5" y="0.0">java.io.InputStream</node>
+    <node x="0.0" y="162.0">java.io.DataInputStream</node>
+    <node x="168.00000000000003" y="162.0">java.io.BufferedInputStream</node>
+    <node x="422.5" y="400.0">java.io.LineNumberReader</node>
+    <node x="16.0" y="319.0">java.io.FilterReader</node>
+    <node x="292.5" y="238.0">java.io.Reader</node>
+    <node x="258.25" y="81.0">java.io.FileInputStream</node>
+    <node x="89.25" y="81.0">java.io.FilterInputStream</node>
+    <node x="287.0" y="319.0">java.io.StringReader</node>
+    <node x="592.25" y="81.0">java.io.ByteArrayInputStream</node>
+    <node x="418.25" y="81.0">java.io.PipedInputStream</node>
+    <node x="2.5" y="400.0">java.io.PushbackReader</node>
+    <node x="433.0" y="319.0">java.io.BufferedReader</node>
+    <node x="156.0" y="319.0">java.io.FileReader</node>
+    <node x="351.25" y="0.0">java.io.InputStream</node>
   </nodes>
-  <notes />
+  <notes>
+    <note x="80.5" y="1.0">
+      <node>java.io.FilterInputStream</node>
+      <value>装饰类抽象类</value>
+      <edge>
+        <point x="-37.25" y="-15.5" />
+        <point x="0.0" y="14.5" />
+      </edge>
+    </note>
+    <note x="691.0" y="1.0">
+      <node>java.io.ByteArrayInputStream</node>
+      <value>被装饰类</value>
+      <edge>
+        <point x="44.25" y="-15.5" />
+        <point x="0.0" y="14.5" />
+      </edge>
+    </note>
+    <note x="0.0" y="239.0">
+      <node>java.io.FilterReader</node>
+      <value>装饰类抽象类</value>
+      <edge>
+        <point x="-30.0" y="-15.5" />
+        <point x="0.0" y="14.5" />
+      </edge>
+    </note>
+    <note x="493.5" y="239.0">
+      <node>java.io.BufferedReader</node>
+      <value>装饰类抽象类</value>
+      <edge>
+        <point x="35.5" y="-15.5" />
+        <point x="0.0" y="14.5" />
+      </edge>
+    </note>
+    <note x="149.75" y="239.0">
+      <node>java.io.FileReader</node>
+      <value>被装饰类</value>
+      <edge>
+        <point x="-27.75" y="-15.5" />
+        <point x="0.0" y="14.5" />
+      </edge>
+    </note>
+  </notes>
   <edges>
-    <edge source="java.io.ByteArrayInputStream" target="java.io.InputStream">
+    <edge source="java.io.LineNumberReader" target="java.io.BufferedReader">
       <point x="0.0" y="-15.5" />
-      <point x="358.25" y="61.0" />
-      <point x="435.875" y="61.0" />
-      <point x="-15.125" y="15.5" />
+      <point x="0.0" y="15.5" />
     </edge>
-    <edge source="java.io.PipedInputStream" target="java.io.InputStream">
+    <edge source="java.io.PushbackReader" target="java.io.FilterReader">
       <point x="0.0" y="-15.5" />
-      <point x="543.75" y="61.0" />
-      <point x="466.125" y="61.0" />
-      <point x="15.125" y="15.5" />
-    </edge>
-    <edge source="java.io.FileInputStream" target="java.io.InputStream">
-      <point x="0.0" y="-15.5" />
-      <point x="710.75" y="51.0" />
-      <point x="496.375" y="51.0" />
-      <point x="45.375" y="15.5" />
-    </edge>
-    <edge source="java.io.BufferedInputStream" target="java.io.FilterInputStream">
-      <point x="2.8421709430404007E-14" y="-15.5" />
-      <point x="85.5" y="137.0" />
-      <point x="138.0" y="137.0" />
-      <point x="-37.25" y="15.5" />
+      <point x="0.0" y="15.5" />
     </edge>
     <edge source="java.io.FilterInputStream" target="java.io.InputStream">
-      <point x="0.0" y="-15.5" />
-      <point x="175.25" y="51.0" />
-      <point x="405.625" y="51.0" />
+      <point x="37.25" y="-15.5" />
+      <point x="201.0" y="51.0" />
+      <point x="366.375" y="51.0" />
       <point x="-45.375" y="15.5" />
     </edge>
     <edge source="java.io.DataInputStream" target="java.io.FilterInputStream">
       <point x="0.0" y="-15.5" />
-      <point x="265.0" y="137.0" />
-      <point x="212.5" y="137.0" />
+      <point x="74.0" y="137.0" />
+      <point x="126.5" y="137.0" />
+      <point x="-37.25" y="15.5" />
+    </edge>
+    <edge source="java.io.FileReader" target="java.io.Reader">
+      <point x="27.75" y="-15.5" />
+      <point x="239.25" y="299.0" />
+      <point x="327.0" y="299.0" />
+      <point x="-11.5" y="15.5" />
+    </edge>
+    <edge source="java.io.ByteArrayInputStream" target="java.io.InputStream">
+      <point x="-44.25" y="-15.5" />
+      <point x="636.5" y="51.0" />
+      <point x="457.125" y="51.0" />
+      <point x="45.375" y="15.5" />
+    </edge>
+    <edge source="java.io.FilterReader" target="java.io.Reader">
+      <point x="30.0" y="-15.5" />
+      <point x="106.0" y="289.0" />
+      <point x="304.0" y="289.0" />
+      <point x="-34.5" y="15.5" />
+    </edge>
+    <edge source="java.io.PipedInputStream" target="java.io.InputStream">
+      <point x="0.0" y="-15.5" />
+      <point x="495.25" y="61.0" />
+      <point x="426.875" y="61.0" />
+      <point x="15.125" y="15.5" />
+    </edge>
+    <edge source="java.io.BufferedReader" target="java.io.Reader">
+      <point x="-35.5" y="-15.5" />
+      <point x="468.5" y="299.0" />
+      <point x="373.0" y="299.0" />
+      <point x="34.50000000000003" y="15.5" />
+    </edge>
+    <edge source="java.io.FileInputStream" target="java.io.InputStream">
+      <point x="0.0" y="-15.5" />
+      <point x="328.25" y="61.0" />
+      <point x="396.625" y="61.0" />
+      <point x="-15.125" y="15.5" />
+    </edge>
+    <edge source="java.io.StringReader" target="java.io.Reader">
+      <point x="2.8421709430404007E-14" y="-15.5" />
+      <point x="11.500000000000028" y="15.5" />
+    </edge>
+    <edge source="java.io.BufferedInputStream" target="java.io.FilterInputStream">
+      <point x="0.0" y="-15.5" />
+      <point x="253.50000000000003" y="137.0" />
+      <point x="201.0" y="137.0" />
       <point x="37.25" y="15.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="1.0" x="330.5" y="407.5" />
-  <SelectedNodes />
+  <settings layout="Hierarchic Group" zoom="1.0" x="331.0" y="408.0" />
+  <SelectedNodes>
+    <node>java.io.FileReader</node>
+  </SelectedNodes>
   <Categories />
   <SCOPE>All</SCOPE>
   <VISIBILITY>private</VISIBILITY>
