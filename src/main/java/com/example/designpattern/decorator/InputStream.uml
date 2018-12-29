@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>java.io.InputStream</OriginalElement>
+  <nodes>
+    <node x="191.0" y="162.0">java.io.DataInputStream</node>
+    <node x="100.75" y="81.0">java.io.FilterInputStream</node>
+    <node x="0.0" y="162.0">java.io.BufferedInputStream</node>
+    <node x="269.75" y="81.0">java.io.ByteArrayInputStream</node>
+    <node x="466.75" y="81.0">java.io.PipedInputStream</node>
+    <node x="640.75" y="81.0">java.io.FileInputStream</node>
+    <node x="390.5" y="0.0">java.io.InputStream</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="java.io.ByteArrayInputStream" target="java.io.InputStream">
+      <point x="0.0" y="-15.5" />
+      <point x="358.25" y="61.0" />
+      <point x="435.875" y="61.0" />
+      <point x="-15.125" y="15.5" />
+    </edge>
+    <edge source="java.io.PipedInputStream" target="java.io.InputStream">
+      <point x="0.0" y="-15.5" />
+      <point x="543.75" y="61.0" />
+      <point x="466.125" y="61.0" />
+      <point x="15.125" y="15.5" />
+    </edge>
+    <edge source="java.io.FileInputStream" target="java.io.InputStream">
+      <point x="0.0" y="-15.5" />
+      <point x="710.75" y="51.0" />
+      <point x="496.375" y="51.0" />
+      <point x="45.375" y="15.5" />
+    </edge>
+    <edge source="java.io.BufferedInputStream" target="java.io.FilterInputStream">
+      <point x="2.8421709430404007E-14" y="-15.5" />
+      <point x="85.5" y="137.0" />
+      <point x="138.0" y="137.0" />
+      <point x="-37.25" y="15.5" />
+    </edge>
+    <edge source="java.io.FilterInputStream" target="java.io.InputStream">
+      <point x="0.0" y="-15.5" />
+      <point x="175.25" y="51.0" />
+      <point x="405.625" y="51.0" />
+      <point x="-45.375" y="15.5" />
+    </edge>
+    <edge source="java.io.DataInputStream" target="java.io.FilterInputStream">
+      <point x="0.0" y="-15.5" />
+      <point x="265.0" y="137.0" />
+      <point x="212.5" y="137.0" />
+      <point x="37.25" y="15.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="330.5" y="407.5" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
